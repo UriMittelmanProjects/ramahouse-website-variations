@@ -1,12 +1,13 @@
-# Rama House website concepts
+# Rama House website
 
-The root app is a Vercel-ready comparison site for three Rama House directions.
+The root app contains the animated Rama House experience.
 
 Routes:
 
-- `/` chooses a concept.
-- `/version-one` opens the warm editorial direction.
-- `/version-two` opens the scroll story direction.
-- `/version-three` opens the animated color direction.
+- `/` opens the landing page.
+- `/menu` opens the menu.
+- `/gallery` opens the gallery.
+- `/about` opens the about page.
+- `/contact` opens the contact page.
 
 Run locally with `npm install` followed by `npm run dev`.

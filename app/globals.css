@@ -71,7 +71,7 @@ p { line-height: 1.7; }
 
 .site-header { align-items: center; background: rgba(13, 25, 17, .97); display: grid; gap: 28px; grid-template-columns: 1fr auto 1fr; height: 92px; padding: 0 5vw; position: sticky; top: 0; z-index: 30; }
 .brand { justify-self: start; }
-.brand img { height: 72px; object-fit: contain; width: auto; }
+.brand-wordmark { color: #fff; font-family: var(--font-display), Georgia, serif; font-size: 27px; font-weight: 560; }
 .desktop-nav { display: flex; gap: 32px; }
 .desktop-nav a { color: #fff; font-size: 14px; font-weight: 700; }
 .desktop-nav a:hover { color: var(--lime); }
@@ -252,7 +252,7 @@ p { line-height: 1.7; }
 .site-footer { background: #0d1a12; color: #fff; }
 .footer-main { display: grid; gap: 55px; grid-template-columns: 1.25fr .75fr 1.15fr .85fr; margin-inline: auto; max-width: 1280px; padding: 85px 48px 70px; }
 .footer-main > div { align-content: start; display: grid; gap: 12px; }
-.footer-brand img { height: 86px; object-fit: contain; object-position: left center; width: auto; }
+.footer-brand .footer-wordmark { color: #fff; font-family: var(--font-display), Georgia, serif; font-size: 38px; font-weight: 560; line-height: 1; margin-bottom: 8px; }
 .footer-brand p { color: rgba(255,255,255,.65); max-width: 270px; }
 .footer-brand .button { margin-top: 8px; width: fit-content; }
 .footer-label { color: var(--lime); font-size: 12px; font-weight: 850; letter-spacing: .13em; margin-bottom: 8px; text-transform: uppercase; }
@@ -279,7 +279,7 @@ p { line-height: 1.7; }
   h2 { font-size: 40px; }
   .content-wrap { width: calc(100% - 36px); }
   .site-header { grid-template-columns: 1fr auto; height: 76px; padding: 0 18px; }
-  .brand img { height: 57px; }
+  .brand-wordmark { font-size: 23px; }
   .desktop-nav, .desktop-order { display: none; }
   .mobile-nav { display: block; }
 
@@ -590,6 +590,7 @@ body:has(.immersive-home) .site-header { background: rgba(5, 14, 10, .9); left: 
 .v3-plate img { object-fit: contain; }
 .v3-plate-one { height: min(58vw, 740px); left: -11vw; top: -2%; width: min(58vw, 740px); }
 .v3-plate-two { bottom: -7%; height: min(54vw, 710px); right: -11vw; width: min(54vw, 710px); }
+.v3-plate-three { height: min(38vw, 500px); right: -10vw; top: 18%; width: min(38vw, 500px); }
 
 .v3-menu-chapter { align-items: center; background: #080b09; color: #f3f1e8; display: flex; justify-content: center; min-height: 118vh; overflow: hidden; padding: 130px 24px; position: relative; }
 .v3-menu-center { max-width: 750px; position: relative; text-align: center; z-index: 3; }
@@ -629,6 +630,7 @@ body:has(.experience-three) .site-footer { background: #080b09; }
   .v3-drinks-track { padding-left: 58vw; }
   .v3-plate-one { left: -20vw; }
   .v3-plate-two { right: -20vw; }
+  .v3-plate-three { right: -16vw; }
 }
 
 @media (max-width: 760px) {
@@ -645,11 +647,12 @@ body:has(.experience-three) .site-footer { background: #080b09; }
   .v3-drink-copy { align-items: flex-start; display: block; }
   .v3-drink-copy h3 { font-size: 26px; }
   .v3-drink-copy p { margin-top: 4px; text-align: left; }
-  .v3-plates { min-height: 1150px; padding: 360px 22px; }
+  .v3-plates { min-height: 1240px; padding: 390px 22px; }
   .v3-plates-copy { text-align: left; }
   .v3-plates-copy > p:not(.v3-section-label) { margin-left: 0; }
   .v3-plate-one { height: 70vw; left: -14vw; top: 4%; width: 88vw; }
   .v3-plate-two { bottom: 2%; height: 75vw; right: -17vw; width: 90vw; }
+  .v3-plate-three { height: 62vw; right: -20vw; top: 22%; width: 72vw; }
   .v3-menu-chapter { min-height: 980px; padding: 320px 22px; }
   .v3-menu-center { text-align: left; }
   .v3-menu-center h2 { margin-bottom: 36px; }
